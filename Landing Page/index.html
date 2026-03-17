@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <!-- Start Header  -->
+    <header class="bg-[#043873] py-3 fixed left-0 top-0 w-full">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="flex items-center gap-2.5">
+          <img src="imgs/logo.png" alt="logo" />
+          <span class="text-2xl font-bold text-white">whitepace</span>
+        </a>
+        <nav class="hidden lg:flex items-center gap-10">
+          <ul class="list-none flex items-center gap-5">
+            <li><a href="#" class="text-white hover:underline">Products</a></li>
+            <li>
+              <a href="#" class="text-white hover:underline">Solutions</a>
+            </li>
+            <li>
+              <a href="#" class="text-white hover:underline">Resources</a>
+            </li>
+            <li><a href="#" class="text-white hover:underline">Pricing</a></li>
+          </ul>
+          <div>
+            <button
+              class="me-3.5 bg-yellow-200 py-2 px-5 rounded-sm cursor-pointer font-semibold transition hover:bg-yellow-400"
+            >
+              Login
+            </button>
+            <button
+              class="text-white bg-sky-400 py-2 px-5 rounded-sm cursor-pointer font-semibold transition-all hover:bg-sky-300"
+            >
+              Try whitepace free
+            </button>
+          </div>
+        </nav>
+        <div class="text-white text-4xl cursor-pointer lg:hidden" id="toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- Start Mobile Menu -->
+        <nav class="hidden items-center gap-5 py-2.5 w-125 bg-white flex-col absolute left-1/2 top-full -translate-x-1/2 rounded-2xl shadow-2xl" id="menu">
+          <ul class="list-none flex flex-col items-center gap-5">
+            <li><a href="#" class="text-[#043873] text-lg font-semibold hover:underline">Products</a></li>
+            <li>
+              <a href="#" class="text-[#043873] text-lg font-semibold hover:underline">Solutions</a>
+            </li>
+            <li>
+              <a href="#" class="text-[#043873] text-lg font-semibold hover:underline">Resources</a>
+            </li>
+            <li><a href="#" class="text-[#043873] text-lg font-semibold hover:underline">Pricing</a></li>
+          </ul>
+          <div class="flex flex-col gap-2.5 mt-5">
+            <button
+              class="bg-yellow-200 w-fit mx-auto py-2 px-5 rounded-sm cursor-pointer font-semibold transition hover:bg-yellow-400"
+            >
+              Login
+            </button>
+            <button
+              class="text-white bg-sky-400 w-fit mx-auto py-2 px-5 rounded-sm cursor-pointer font-semibold transition-all hover:bg-sky-300"
+            >
+              Try whitepace free
+            </button>
+          </div>
+        </nav>
+        <!-- End Mobile Menu -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Hero Section -->
+    <section class="bg-[#043873]">
+      <div
+        class="container pt-10 px-5 mx-auto flex justify-center items-center flex-col gap-10 min-h-screen md:flex-row"
+      >
+        <div class="text-center md:text-start">
+          <h1 class="text-2xl font-extrabold text-white md:text-4xl">
+            Get More Done with <br />
+            whitepace
+          </h1>
+          <p class="my-6 text-white">
+            Project management software that enables your teams to
+            collaborate,<br />
+            plan, analyze and manage everyday tasks
+          </p>
+          <button
+            class="text-white bg-sky-400 py-3 px-6 rounded-sm cursor-pointer font-semibold transition-all hover:bg-sky-300"
+          >
+            Try whitepace free
+          </button>
+        </div>
+        <div class="w-full md:w-1/2">
+          <img
+            class="w-full h-auto object-contain"
+            src="imgs/Image-container.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Start Project Management Section -->
+    <section>
+      <div
+        class="container mx-auto py-10 text-center md:text-start flex justify-center items-center flex-col md:flex-row gap-0"
+      >
+        <div class="md:w-1/2">
+          <h1 class="text-2xl md:text-4xl font-semibold md:font-bold">
+            Project <br />
+            Management
+          </h1>
+          <p class="font-semibold my-4 w-full">
+            Images, videos, PDFs and audio files are supported. Create math
+            expressions and diagrams directly from the app. Take photos with the
+            mobile app and save them to a note.
+          </p>
+          <button
+            class="text-white bg-sky-400 py-3 px-6 rounded-sm cursor-pointer font-semibold transition-all hover:bg-sky-300"
+          >
+            Get Started
+          </button>
+        </div>
+        <div class="md:w-1/2 mt-5">
+          <img class="w-full h-auto object-contain" src="imgs/Image.png" />
+        </div>
+      </div>
+    </section>
+    <!-- End Project Management Section -->
+
+    <!-- Start Work Together Section -->
+    <section class="py-10">
+      <div
+        class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-center gap-10"
+      >
+        <div class="md:w-1/2">
+          <img
+            class="w-full h-auto"
+            src="imgs/Work-together-image.png"
+            alt=""
+          />
+        </div>
+
+        <div class="md:w-1/2 text-center md:text-left">
+          <h1 class="text-2xl md:text-4xl font-bold">Work together</h1>
+
+          <p class="font-semibold my-4 max-w-lg">
+            With whitepace, share your notes with your colleagues and
+            collaborate on them. You can also publish a note to the internet and
+            share the URL with others.
+          </p>
+
+          <button
+            class="text-white cursor-pointer bg-sky-400 py-3 px-6 rounded-sm font-semibold transition hover:bg-sky-300"
+          >
+            Try it now
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End Work Together Section -->
+
+    <!-- Start Extension Section -->
+    <section class="py-10 bg-[#043873]">
+      <div
+        class="container mx-auto flex justify-center items-center flex-col md:flex-row gap-16"
+      >
+        <div class="md:w-1/2 text-center md:text-left">
+          <h1 class="text-2xl md:text-4xl font-bold text-white">
+            Use as Extension
+          </h1>
+
+          <p class="font-semibold my-4 max-w-lg text-white">
+            Use the web clipper extension, available on Chrome and Firefox, to
+            save web pages or take screenshots as notes.
+          </p>
+
+          <button
+            class="text-white cursor-pointer bg-sky-400 py-3 px-6 rounded-sm font-semibold transition hover:bg-sky-300"
+          >
+            Let's Go
+          </button>
+        </div>
+        <div class="md:w-1/2">
+          <img class="w-full h-auto" src="imgs/Image.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- End Extension Section -->
+
+    <!-- Start Needs Section -->
+    <section class="py-10">
+      <div
+        class="container mx-auto flex justify-center items-center flex-col-reverse md:flex-row gap-14"
+      >
+        <div class="md:w-1/2">
+          <img class="w-full h-auto" src="imgs/Image.png" alt="" />
+        </div>
+        <div class="md:w-1/2 text-center md:text-left">
+          <h1 class="text-2xl md:text-4xl font-bold">
+            Customise it <br />
+            to your needs
+          </h1>
+
+          <p class="font-semibold my-4 max-w-lg">
+            Customise the app with plugins, custom themes and multiple text
+            editors (Rich Text or Markdown). Or create your own scripts and
+            plugins using the Extension API.
+          </p>
+
+          <button
+            class="text-white cursor-pointer bg-sky-400 py-3 px-6 rounded-sm font-semibold transition hover:bg-sky-300"
+          >
+            Let's Go
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End Needs Section -->
+
+    <!-- Start Plan Section -->
+    <section class="py-10">
+      <div class="container mx-auto">
+        <div class="text-center">
+          <h1 class="text-2xl md:text-4xl font-bold">Choose Your Plan</h1>
+          <p class="mt-3">
+            Whether you want to get organized, keep your personal life on track,
+            or boost workplace productivity, Evernote has the right plan for
+            you.
+          </p>
+        </div>
+        <div class="mt-10 flex justify-center gap-10 flex-wrap">
+          <div
+            class="border border-yellow-200 p-5 rounded-lg transition duration-75 hover:bg-[#043873] hover:text-white group w-96"
+          >
+            <h4 class="font-semibold text-xl">Free</h4>
+            <h2 class="my-5 font-bold text-2xl group-hover:text-yellow-300">
+              $0
+            </h2>
+            <p class="mb-5 text-xl">Capture ideas and find them quickly</p>
+            <div class="flex flex-col gap-5">
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                Sync unlimited devices
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                10 GB monthly uploads
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                200 MB max. note size
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                Customize Home dashboard and access extra widgets
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                Connect primary Google Calendar account
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                Add due dates, reminders, and notifications to your tasks
+              </p>
+            </div>
+            <button
+              class="mt-5 px-5 py-2.5 border border-yellow-200 cursor-pointer rounded-md group-hover:bg-sky-400 group-hover:text-white group-hover:border-0"
+            >
+              Get Started
+            </button>
+          </div>
+          <div
+            class="border border-yellow-200 p-5 rounded-lg transition duration-75 hover:bg-[#043873] hover:text-white group w-96"
+          >
+            <h4 class="font-semibold text-xl">Personal</h4>
+            <h2 class="my-5 font-bold text-2xl group-hover:text-yellow-300">
+              $11.99
+            </h2>
+            <p class="mb-5 text-xl">Keep home and family on track</p>
+            <div class="flex flex-col gap-5">
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                Sync unlimited devices
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                10 GB monthly uploads
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                200 MB max. note size
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                Customize Home dashboard and access extra widgets
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                Connect primary Google Calendar account
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                Add due dates, reminders, and notifications to your tasks
+              </p>
+            </div>
+            <button
+              class="mt-5 px-5 py-2.5 border border-yellow-200 cursor-pointer rounded-md group-hover:bg-sky-400 group-hover:text-white group-hover:border-0"
+            >
+              Get Started
+            </button>
+          </div>
+          <div
+            class="border border-yellow-200 p-5 rounded-lg transition duration-75 hover:bg-[#043873] hover:text-white group w-96"
+          >
+            <h4 class="font-semibold text-xl">Organization</h4>
+            <h2 class="my-5 font-bold text-2xl group-hover:text-yellow-300">
+              $49.99
+            </h2>
+            <p class="mb-5 text-xl">Capture ideas and find them quickly</p>
+            <div class="flex flex-col gap-5">
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                Sync unlimited devices
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                10 GB monthly uploads
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                200 MB max. note size
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                Customize Home dashboard and access extra widgets
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                Connect primary Google Calendar account
+              </p>
+              <p class="text-lg">
+                <i
+                  class="fa-regular fa-circle-check group-hover:text-yellow-300"
+                ></i>
+                Add due dates, reminders, and notifications to your tasks
+              </p>
+            </div>
+            <button
+              class="mt-5 px-5 py-2.5 border border-yellow-200 cursor-pointer rounded-md group-hover:bg-sky-400 group-hover:text-white group-hover:border-0"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Plan Section -->
+
+    <!-- Start Work Section -->
+    <section class="py-28 bg-[#043873]">
+      <div class="container mx-auto text-center text-white max-w-225">
+        <h1 class="text-2xl md:text-4xl font-bold">
+          Your work, everywhere you are
+        </h1>
+        <p class="my-10 text-sm md:text-lg">
+          Access your notes from your computer, phone or tablet by synchronising
+          with various services, including whitepace, Dropbox and OneDrive. The
+          app is available on Windows, macOS, Linux, Android and iOS. A terminal
+          app is also available!
+        </p>
+        <button
+          class="text-white cursor-pointer bg-sky-400 py-3 px-6 rounded-sm font-semibold transition hover:bg-sky-300"
+        >
+          Try Taskey
+        </button>
+      </div>
+    </section>
+    <!-- End Work Section -->
+
+    <!-- Start Data Section -->
+    <section class="py-10">
+      <div
+        class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-10"
+      >
+        <div class="md:w-1/2 text-center md:text-left">
+          <h1 class="text-2xl md:text-4xl font-bold">100% your data</h1>
+
+          <p class="font-semibold my-4 max-w-lg">
+            The app is open source and your notes are saved to an open format,
+            so you'll always have access to them. Uses End-To-End Encryption
+            (E2EE) to secure your notes and ensure no-one but yourself can
+            access them.
+          </p>
+
+          <button
+            class="text-white cursor-pointer bg-sky-400 py-3 px-6 rounded-sm font-semibold transition hover:bg-sky-300"
+          >
+            Read more
+          </button>
+        </div>
+
+        <div class="md:w-1/2">
+          <img class="w-full h-auto" src="imgs/Element.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- End Data Section -->
+
+    <!-- Start Sponserse Section -->
+    <section class="py-20">
+      <div class="container mx-auto">
+        <h1 class="text-center text-4xl md:text-6xl font-bold">Our sponsors</h1>
+        <div
+          class="flex flex-col md:flex-row justify-center md:justify-around mt-20 gap-10"
+        >
+          <div class="flex justify-center">
+            <img src="imgs/Group.png" alt="" />
+          </div>
+          <div class="flex justify-center">
+            <img src="imgs/Microsoft.png" alt="" />
+          </div>
+          <div class="flex justify-center">
+            <img src="imgs/Slack.png" alt="" />
+          </div>
+          <div class="flex justify-center">
+            <img src="imgs/Google.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Sponserse Section -->
+
+    <!-- Start Favorit App Section -->
+    <section class="py-10 bg-[#043873]">
+      <div
+        class="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-center gap-10"
+      >
+        <div class="md:w-1/2">
+          <img class="w-full h-auto" src="imgs/Apps.png" alt="" />
+        </div>
+        <div class="md:w-1/2 text-center md:text-left text-white">
+          <h1 class="text-2xl md:text-4xl font-bold">100% your data</h1>
+
+          <p class="font-semibold my-4 max-w-lg">
+            The app is open source and your notes are saved to an open format,
+            so you'll always have access to them. Uses End-To-End Encryption
+            (E2EE) to secure your notes and ensure no-one but yourself can
+            access them.
+          </p>
+
+          <button
+            class="text-white cursor-pointer bg-sky-400 py-3 px-6 rounded-sm font-semibold transition hover:bg-sky-300"
+          >
+            Read more
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End Favorit App Section -->
+
+    <!-- Start Testimonials Section -->
+    <section class="py-20">
+      <div class="container mx-auto">
+        <div class="text-center text-4xl md:text-6xl font-bold">
+          What Our Clients Says
+        </div>
+        <div
+          class="mt-20 flex justify-center items-center flex-col xl:flex-row gap-10"
+        >
+          <div class="w-96 p-5 hover:bg-[#4F9CF9] rounded-md group">
+            <div class="text-6xl font-bold group-hover:text-white">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p class="my-5 group-hover:text-white">
+              Whitepate is designed as a collaboration tool for businesses that
+              is a full project management solution.
+            </p>
+            <hr class="my-10" />
+            <div class="flex justify-between items-center gap-10">
+              <div>
+                <img src="imgs/Avater.png" alt="" />
+              </div>
+              <div>
+                <h5 class="font-bold text-2xl group-hover:text-sky-950">
+                  Oberon Shaw, MCH
+                </h5>
+                <p class="text-sm mt-4 group-hover:text-white">
+                  Head of Talent Acquisition, North America
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-96 p-5 hover:bg-[#4F9CF9] rounded-md group">
+            <div class="text-6xl font-bold group-hover:text-white">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p class="my-5 group-hover:text-white">
+              Whitepate is designed as a collaboration tool for businesses that
+              is a full project management solution.
+            </p>
+            <hr class="my-10" />
+            <div class="flex justify-between items-center gap-10">
+              <div>
+                <img src="imgs/Avater-1.png" alt="" />
+              </div>
+              <div>
+                <h5 class="font-bold text-2xl group-hover:text-sky-950">
+                  Oberon Shaw, MCH
+                </h5>
+                <p class="text-sm mt-4 group-hover:text-white">
+                  Head of Talent Acquisition, North America
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-96 p-5 hover:bg-[#4F9CF9] rounded-md group">
+            <div class="text-6xl font-bold group-hover:text-white">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p class="my-5 group-hover:text-white">
+              Whitepate is designed as a collaboration tool for businesses that
+              is a full project management solution.
+            </p>
+            <hr class="my-10" />
+            <div class="flex justify-between items-center gap-10">
+              <div>
+                <img src="imgs/Avater-2.png" alt="" />
+              </div>
+              <div>
+                <h5 class="font-bold text-2xl group-hover:text-sky-950">
+                  Oberon Shaw, MCH
+                </h5>
+                <p class="text-sm mt-4 group-hover:text-white">
+                  Head of Talent Acquisition, North America
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- Start Footer -->
+    <footer class="bg-[#043873] pt-20">
+      <div class="container mx-auto">
+        <div class="text-center">
+          <h1 class="text-white text-4xl md:text-6xl font-bold">
+            Try Whitepace <br />
+            today
+          </h1>
+          <p class="my-10 text-white">
+            Get started for free. <br />
+            Add your whole team as your needs grow.
+          </p>
+          <button
+            class="text-white cursor-pointer bg-sky-400 py-3 px-6 rounded-sm font-semibold transition hover:bg-sky-300"
+          >
+            Read more
+          </button>
+          <p class="text-white mt-5">On a big team? Contact sales</p>
+          <div class="mt-10 flex justify-center">
+            <img class="text-center" src="imgs/App-icon.png" alt="" />
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center md:items-start mt-20 flex-wrap flex-col md:flex-row gap-20 text-center md:text-start"
+        >
+          <div>
+            <h4 class="text-5xl flex items-center gap-5">
+              <img src="imgs/logo.png" alt="" />
+              <span class="text-white font-bold"> Whitepace</span>
+            </h4>
+            <p class="w-60 text-white mt-6 mx-auto text-center">
+              whitepace was created for the new ways we live and work. We make a
+              better workspace around the world
+            </p>
+          </div>
+          <div>
+            <h4 class="text-2xl text-white font-semibold">Product</h4>
+            <div class="mt-2 text-white">
+              <p class="hover:text-yellow-200">Overview</p>
+              <p class="my-2 hover:text-yellow-200">Pricing</p>
+              <p class="hover:text-yellow-200">Customer stories</p>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-2xl text-white font-semibold">Resources</h4>
+            <div class="mt-2 text-white">
+              <p class="hover:text-yellow-200">Blog</p>
+              <p class="my-2 hover:text-yellow-200">Guides & tutorials</p>
+              <p class="hover:text-yellow-200">Help center</p>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-2xl text-white font-semibold">Company</h4>
+            <div class="mt-2 text-white">
+              <p class="hover:text-yellow-200">About us</p>
+              <p class="my-2 hover:text-yellow-200">Careers</p>
+              <p class="hover:text-yellow-200">Media kit</p>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-2xl text-white font-semibold">Try It Today</h4>
+            <p class="text-white w-52 my-10">
+              Get started for free. Add your whole team as your needs grow.
+            </p>
+            <button
+              class="text-white cursor-pointer bg-sky-400 py-3 px-6 rounded-sm font-semibold transition hover:bg-sky-300"
+            >
+              Start today
+            </button>
+          </div>
+        </div>
+        <hr class="mt-20 text-[#2E4E73] hidden lg:block" />
+        <div
+          class="flex justify-between flex-col lg:flex-row items-center py-6 gap-5 lg:gap-0"
+        >
+          <div
+            class="flex items-center flex-col gap-5 lg:flex-row lg:gap-20 text-white"
+          >
+            <p>
+              <i class="fa-solid fa-earth-europe"></i>
+              <span>English</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </p>
+            <p>Terms & privacy</p>
+            <p>Security</p>
+            <p>Status</p>
+            <p>©2021 Whitepace LLC.</p>
+          </div>
+          <div class="text-white flex gap-5">
+            <i
+              class="fa-brands fa-facebook-f cursor-pointer hover:text-sky-400"
+            ></i>
+            <i
+              class="fa-brands fa-twitter cursor-pointer hover:text-sky-400"
+            ></i>
+            <i
+              class="fa-brands fa-instagram cursor-pointer hover:text-sky-400"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
