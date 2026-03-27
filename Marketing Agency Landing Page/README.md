@@ -28,3 +28,10 @@ A fully responsive **Marketing Agency Landing Page** built using **HTML5** and *
 ## 🔹 Screenshot
 
 ![screenshot](imgs/screenshots/demo.png);
+
+---
+
+## 🔹 Live Demo
+
+<a href="https://marketing-agencty-page.netlify.app/">live demo</a>
+
